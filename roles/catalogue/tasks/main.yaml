@@ -67,8 +67,8 @@
    - sai
 - name: catalogue daemon reload
   systemd_service:
-  name: catalogue
-  daemon_reload: true
+    name: catalogue
+    daemon_reload: true
 - name: start and enable catalogue
   service:
     name: catalogue
