@@ -1,0 +1,10 @@
+- name: "copy {{ component }} service"
+  template:
+     src: "{{ component }}.service.j2"
+     dest: "/etc/systemd/system/{{ component }}.service"
+  register: unit_file
+  
+- name: "{{ component }} daemon reload"
+  systemd_service:
+    name: "{{ component }}"
+    daemon_reload: true
