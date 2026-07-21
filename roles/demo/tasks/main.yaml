@@ -1,3 +1,6 @@
 - name: demo role
   debug: 
     msg: "hi, i am from demo role tasks"
+- name: import common role
+  import_role:
+    name: common
