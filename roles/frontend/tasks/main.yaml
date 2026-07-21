@@ -34,7 +34,7 @@
        src: nginx.conf
        dest: /etc/nginx/nginx.conf
     notify: restart nginx
-      
+
   - name: remove html directory
     file:
       path: /usr/share/nginx/html/
