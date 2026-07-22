@@ -2,4 +2,4 @@
   hosts: local
   connection: local
   roles: 
-  - role-1
+   - role-1
