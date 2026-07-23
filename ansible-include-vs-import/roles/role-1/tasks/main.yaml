@@ -1,3 +1,0 @@
-- name: call common role
-  import_role:
-    name: common
